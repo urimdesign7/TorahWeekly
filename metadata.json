@@ -1,0 +1,8 @@
+{
+  "name": "Remix 토라포션 히브리어 원어 암송 (Torah Hebrew Memory)",
+  "description": "매주 토라포션의 핵심 성경 구절을 히브리어 원어, 발음, 어근 분해, 단계별 주간 7일 훈련으로 암송하는 성경 원어 학습 앱",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

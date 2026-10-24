@@ -1,0 +1,1212 @@
+import { TorahPortion } from '../types/torah';
+
+export const TORAH_PORTIONS: TorahPortion[] = [
+  {
+    id: 'bereshit',
+    portionNumber: 1,
+    nameHebrew: 'בְּרֵאשִׁית',
+    nameEnglish: 'Bereshit',
+    nameKorean: '베레쉬트 (태초에)',
+    book: 'Genesis',
+    bookKorean: '창세기',
+    torahReference: '창세기 1:1 - 6:8',
+    haftarahReference: '이사야 42:5 - 43:10',
+    britChadashah: '요한복음 1:1-14; 골로새서 1:15-17',
+    themeSummary: '천지만물의 무(無)에서의 창조, 인간의 창조와 안식, 그리고 인류의 시작',
+    keyInsights: [
+      '히브리어 첫 단어 בְּרֵאשִׁית는 머리/시작(ראש)에서 유래하며 그리스도의 예표가 됩니다.',
+      '하나님(אֱלֹהִים)은 삼위일체적 장엄 복수형이며, 창조하다(בָּרָא)는 오직 신적 창조에만 쓰이는 단어입니다.',
+      '말씀으로 지어진 빛은 물리적 태양 이전의 하나님의 근원적 영광의 빛을 가리킵니다.'
+    ],
+    memoryVerse: {
+      reference: '창세기 1:1',
+      referenceEn: 'Genesis 1:1',
+      hebrewWithNiqqud: 'בְּרֵאשִׁית בָּרָא אֱלֹהִים אֵת הַשָּׁמַיִם וְאֵת הָאָרֶץ׃',
+      hebrewWithoutNiqqud: 'בראשית ברא אלהים את השמים ואת הארץ׃',
+      koreanPronunciation: '베레쉬트 바라 엘로힘 에트 하샤마임 베에트 하아레츠',
+      koreanTranslation: '태초에 하나님이 천지를 창조하시니라',
+      englishTranslation: 'In the beginning God created the heavens and the earth.',
+      words: [
+        {
+          id: 'b-1',
+          hebrew: 'בְּרֵאשִׁית',
+          hebrewPlain: 'בראשית',
+          pronunciation: '베레쉬트',
+          phoneticEn: 'be-re-SHIT',
+          meaning: '태초에 (시작 안에)',
+          root: 'ר־א־שׁ (로쉬: 머리, 으뜸)',
+          strongNumber: 'H7225',
+          grammar: '전치사 בְּ (~안에) + 명사 רֵאשִׁית (처음/시작)',
+          breakdownNote: '태초의 시간과 공간의 시작점을 선언하는 단어'
+        },
+        {
+          id: 'b-2',
+          hebrew: 'בָּרָא',
+          hebrewPlain: 'ברא',
+          pronunciation: '바라',
+          phoneticEn: 'ba-RA',
+          meaning: '창조하시니라 (무에서 유를)',
+          root: 'ב־ר־א (바라: 창조하다)',
+          strongNumber: 'H1254',
+          grammar: '동사 칼(Qal) 완료 3인칭 남성 단수',
+          breakdownNote: '오직 하나님만이 주어로 사용되는 신적 창조 동사'
+        },
+        {
+          id: 'b-3',
+          hebrew: 'אֱלֹהִים',
+          hebrewPlain: 'אלהים',
+          pronunciation: '엘로힘',
+          phoneticEn: 'e-lo-HEEM',
+          meaning: '하나님이 (전능하신 분)',
+          root: 'א־ל־ה (엘: 강한 자, 신)',
+          strongNumber: 'H430',
+          grammar: '명사 남성 복수 (장엄 복수형)',
+          breakdownNote: '단수 동사 바라(בָּרָא)와 결합하여 유일하신 삼위일체 하나님을 계시'
+        },
+        {
+          id: 'b-4',
+          hebrew: 'אֵת',
+          hebrewPlain: 'את',
+          pronunciation: '에트',
+          phoneticEn: 'et',
+          meaning: '~을/를 (목적격 표지)',
+          root: 'א־ת (알레프-타브: 알파와 오메가)',
+          strongNumber: 'H853',
+          grammar: '직접 목적격 불변화사',
+          breakdownNote: '히브리어 첫 글자(א)와 마지막 글자(ת)의 결합'
+        },
+        {
+          id: 'b-5',
+          hebrew: 'הַשָּׁמַיִם',
+          hebrewPlain: 'השמים',
+          pronunciation: '하샤마임',
+          phoneticEn: 'ha-sha-MA-yim',
+          meaning: '하늘들을',
+          root: 'ש־מ־י (솨마: 높음, 물)',
+          strongNumber: 'H8064',
+          grammar: '정관사 הַ + 명사 쌍수/복수형 שָׁמַיִם',
+          breakdownNote: '높은 영적 하늘과 광활한 우주 궁창'
+        },
+        {
+          id: 'b-6',
+          hebrew: 'וְאֵת',
+          hebrewPlain: 'ואת',
+          pronunciation: '베에트',
+          phoneticEn: 've-ET',
+          meaning: '그리고 ~을/를',
+          root: 'ו + א־ת (접속사 + 목적격)',
+          strongNumber: 'H853',
+          grammar: '접속사 וְ (그리고) + 목적격 표지 אֵת',
+          breakdownNote: '하늘과 땅을 대등하게 잇는 거룩한 접속'
+        },
+        {
+          id: 'b-7',
+          hebrew: 'הָאָרֶץ׃',
+          hebrewPlain: 'הארץ',
+          pronunciation: '하아레츠',
+          phoneticEn: 'ha-A-retz',
+          meaning: '그 땅을',
+          root: 'א־ר־ץ (에레츠: 땅, 흙)',
+          strongNumber: 'H776',
+          grammar: '정관사 הָ + 명사 여성 단수 אֶרֶץ',
+          breakdownNote: '인간의 거처로 예비된 지구, 소프 파숙(׃)은 절의 끝'
+        }
+      ]
+    }
+  },
+  {
+    id: 'noach',
+    portionNumber: 2,
+    nameHebrew: 'נֹחַ',
+    nameEnglish: 'Noach',
+    nameKorean: '노아 (안식, 위로)',
+    book: 'Genesis',
+    bookKorean: '창세기',
+    torahReference: '창세기 6:9 - 11:32',
+    haftarahReference: '이사야 54:1 - 55:5',
+    britChadashah: '마태복음 24:36-46; 베드로전서 3:18-22',
+    themeSummary: '타락한 세대 속에서 하나님과 동행한 의인 노아와 구원의 방주 언약',
+    keyInsights: [
+      '노아는 당대에 완전한 자였으며 무엇보다 하나님과 "동행(히트할레크)"했습니다.',
+      '방주(테바, תֵּבָה)는 훗날 모세를 살린 갈대상자와 동일한 원어로 구원의 피난처를 상징합니다.',
+      '심판 후 하나님은 무지개(케셰트, 언약의 활)를 두어 다시는 물로 멸하지 않으리라 언약하셨습니다.'
+    ],
+    memoryVerse: {
+      reference: '창세기 6:8',
+      referenceEn: 'Genesis 6:8',
+      hebrewWithNiqqud: 'וְנֹחַ מָצָא חֵן בְּעֵינֵי יְהוָה׃',
+      hebrewWithoutNiqqud: 'ונח מצא חן בעיני יהוה׃',
+      koreanPronunciation: '베노아흐 마차 헨 베에네 아도나이',
+      koreanTranslation: '그러나 노아는 여호와께 은혜를 입었더라',
+      englishTranslation: 'But Noah found favor in the eyes of the LORD.',
+      words: [
+        {
+          id: 'n-1',
+          hebrew: 'וְנֹחַ',
+          hebrewPlain: 'ונח',
+          pronunciation: '베노아흐',
+          phoneticEn: 've-NO-ach',
+          meaning: '그러나 노아는',
+          root: 'נ־ו־ח (누아흐: 쉬다, 안식하다)',
+          strongNumber: 'H5146',
+          grammar: '접속사 וְ + 고유명사 נֹחַ',
+          breakdownNote: '안식을 가져다줄 자라는 이름의 뜻'
+        },
+        {
+          id: 'n-2',
+          hebrew: 'מָצָא',
+          hebrewPlain: 'מצא',
+          pronunciation: '마차',
+          phoneticEn: 'ma-TZA',
+          meaning: '발견하였더라 (입었더라)',
+          root: 'מ־צ־א (마차: 찾다, 얻다)',
+          strongNumber: 'H4672',
+          grammar: '동사 칼 완료 3인칭 남성 단수',
+          breakdownNote: '은혜를 거저 선물로 발견하고 얻음을 의미'
+        },
+        {
+          id: 'n-3',
+          hebrew: 'חֵן',
+          hebrewPlain: 'חן',
+          pronunciation: '헨',
+          phoneticEn: 'chen',
+          meaning: '은혜, 호의를',
+          root: 'ח־נ־ן (하난: 불쌍히 여기다, 은혜 베풀다)',
+          strongNumber: 'H2580',
+          grammar: '명사 남성 단수',
+          breakdownNote: '노아(נח)의 철자를 뒤집으면 바로 은혜(חן)가 됨'
+        },
+        {
+          id: 'n-4',
+          hebrew: 'בְּעֵינֵי',
+          hebrewPlain: 'בעיני',
+          pronunciation: '베에네',
+          phoneticEn: 'be-ei-NEI',
+          meaning: '~의 눈앞에서 (시선 안에서)',
+          root: 'ע־י־ן (아인: 눈)',
+          strongNumber: 'H5869',
+          grammar: '전치사 בְּ + 명사 연계형 쌍수 עֵינֵי',
+          breakdownNote: '하나님의 인자하신 시선과 눈동자'
+        },
+        {
+          id: 'n-5',
+          hebrew: 'יְהוָה׃',
+          hebrewPlain: 'יהוה',
+          pronunciation: '아도나이 (여호와)',
+          phoneticEn: 'Adonai',
+          meaning: '여호와의',
+          root: 'ה־ו־ה (하야: 스스로 계신 분)',
+          strongNumber: 'H3068',
+          grammar: '신성사문자 (테트라그라마톤)',
+          breakdownNote: '언약의 신실하신 하나님의 거룩한 성호'
+        }
+      ]
+    }
+  },
+  {
+    id: 'lech-lecha',
+    portionNumber: 3,
+    nameHebrew: 'לֶךְ־לְךָ',
+    nameEnglish: 'Lech Lecha',
+    nameKorean: '레크 레카 (너를 위하여 떠나라)',
+    book: 'Genesis',
+    bookKorean: '창세기',
+    torahReference: '창세기 12:1 - 17:27',
+    haftarahReference: '이사야 40:27 - 41:16',
+    britChadashah: '로마서 4:1-25; 히브리서 11:8-19',
+    themeSummary: '아브라함의 믿음의 순종과 부르심, 열국의 아비가 되는 영원한 횃불 언약',
+    keyInsights: [
+      '레크 레카(לך לך)는 직역하면 "너를 위하여 가라(Go for yourself)"로 내면의 영적 순종의 여정입니다.',
+      '고향과 친척과 아비 집을 떠남은 옛 자아의 터전을 버리고 하나님만을 의지하는 믿음의 발걸음입니다.',
+      '하나님은 아브라함에게 복의 근원(베라카, בְּרָכָה)이 될 것을 약속하셨습니다.'
+    ],
+    memoryVerse: {
+      reference: '창세기 12:1',
+      referenceEn: 'Genesis 12:1',
+      hebrewWithNiqqud: 'וַיֹּאמֶר יְהוָה אֶל־אַבְרָם לֶךְ־לְךָ מֵאַרְצְךָ וּמִמּוֹלַדְתְּךָ וּמִבֵּית אָבִיךָ אֶל־הָאָרֶץ אֲשֶׁר אַרְאֶךָּ׃',
+      hebrewWithoutNiqqud: 'ויאמר יהוה אל אברם לך לך מארצך וממולדתך ומבית אביך אל הארץ אשר אראך׃',
+      koreanPronunciation: '바요메르 아도나이 엘 아브람 레크 레카 메아르체카 우미몰라드테카 우미베이트 아비카 엘 하아레츠 아쉐르 아르에카',
+      koreanTranslation: '여호와께서 아브람에게 이르시되 너는 너의 고향과 친척과 아버지의 집을 떠나 내가 네게 보여 줄 땅으로 가라',
+      englishTranslation: 'Now the LORD said to Abram, "Go from your country and your kindred and your father\'s house to the land that I will show you."',
+      words: [
+        {
+          id: 'l-1',
+          hebrew: 'וַיֹּאמֶר',
+          hebrewPlain: 'ויאמר',
+          pronunciation: '바요메르',
+          phoneticEn: 'va-YO-mer',
+          meaning: '그리고 말씀하시니라',
+          root: 'א־מ־ר (아마르: 말하다)',
+          strongNumber: 'H559',
+          grammar: '와우 연속법 + 미완료 3인칭 남성 단수',
+          breakdownNote: '하나님의 직접적인 계시의 음성'
+        },
+        {
+          id: 'l-2',
+          hebrew: 'יְהוָה',
+          hebrewPlain: 'יהוה',
+          pronunciation: '아도나이',
+          phoneticEn: 'Adonai',
+          meaning: '여호와께서',
+          root: 'ה־ו־ה (하야: 자존자)',
+          strongNumber: 'H3068',
+          grammar: '신성사문자 고유명사',
+          breakdownNote: '부르시는 주체이신 주님'
+        },
+        {
+          id: 'l-3',
+          hebrew: 'אֶל־אַבְרָם',
+          hebrewPlain: 'אל אברם',
+          pronunciation: '엘 아브람',
+          phoneticEn: 'el Av-RAM',
+          meaning: '아브람에게',
+          root: 'א־ב־ר־ם (아브람: 존귀한 아버지)',
+          strongNumber: 'H87',
+          grammar: '전치사 אֶל (~에게) + 고유명사',
+          breakdownNote: '훗날 아브라함(열국의 아버지)으로 개명됨'
+        },
+        {
+          id: 'l-4',
+          hebrew: 'לֶךְ־לְךָ',
+          hebrewPlain: 'לך לך',
+          pronunciation: '레크 레카',
+          phoneticEn: 'LECH le-CHA',
+          meaning: '너는 떠나라 (너 자신을 위하여 가라)',
+          root: 'ה־ל־ך (할라크: 걷다, 가다)',
+          strongNumber: 'H1980',
+          grammar: '동사 칼 명령형 + 인칭대명사 전치격',
+          breakdownNote: '자신의 목적과 사명을 향해 능동적으로 나아가는 명령'
+        },
+        {
+          id: 'l-5',
+          hebrew: 'מֵאַרְצְךָ',
+          hebrewPlain: 'מארצך',
+          pronunciation: '메아르체카',
+          phoneticEn: 'me-ar-tze-CHA',
+          meaning: '너의 땅(본토)으로부터',
+          root: 'א־ר־ץ (에레츠: 땅)',
+          strongNumber: 'H776',
+          grammar: '전치사 מִן + 명사 + 2인칭 남성 접미사',
+          breakdownNote: '익숙했던 세속의 고향'
+        },
+        {
+          id: 'l-6',
+          hebrew: 'וּמִמּוֹלַדְתְּךָ',
+          hebrewPlain: 'וממולדתך',
+          pronunciation: '우미몰라드테카',
+          phoneticEn: 'u-mi-mo-lad-te-CHA',
+          meaning: '그리고 너의 친척으로부터',
+          root: 'י־ל־ד (얄라드: 낳다)',
+          strongNumber: 'H4138',
+          grammar: '접속사 + 전치사 + 명사 + 인칭 접미사',
+          breakdownNote: '혈통적 인간 관계망'
+        },
+        {
+          id: 'l-7',
+          hebrew: 'וּמִבֵּית',
+          hebrewPlain: 'ומבית',
+          pronunciation: '우미베이트',
+          phoneticEn: 'u-mi-BEIT',
+          meaning: '그리고 ~의 집으로부터',
+          root: 'ב־י־ת (바이트: 집)',
+          strongNumber: 'H1004',
+          grammar: '접속사 + 전치사 + 명사 연계형',
+          breakdownNote: '삶의 터전과 안전지대'
+        },
+        {
+          id: 'l-8',
+          hebrew: 'אָבִיךָ',
+          hebrewPlain: 'אביך',
+          pronunciation: '아비카',
+          phoneticEn: 'a-VI-cha',
+          meaning: '너의 아버지의',
+          root: 'א־ב (아브: 아버지)',
+          strongNumber: 'H1',
+          grammar: '명사 + 2인칭 남성 소유 접미사',
+          breakdownNote: '가부장적 우상의 배경을 떠남'
+        },
+        {
+          id: 'l-9',
+          hebrew: 'אֶל־הָאָרֶץ',
+          hebrewPlain: 'אל הארץ',
+          pronunciation: '엘 하아레츠',
+          phoneticEn: 'el ha-A-retz',
+          meaning: '그 땅으로',
+          root: 'א־ר־ץ (에레츠: 땅)',
+          strongNumber: 'H776',
+          grammar: '전치사 + 정관사 + 명사',
+          breakdownNote: '하나님이 지정하신 약속의 땅 가나안'
+        },
+        {
+          id: 'l-10',
+          hebrew: 'אֲשֶׁר',
+          hebrewPlain: 'אשר',
+          pronunciation: '아쉐르',
+          phoneticEn: 'a-SHER',
+          meaning: '~하는 (관계대명사)',
+          root: '불변화사',
+          strongNumber: 'H834',
+          grammar: '관계대명사',
+          breakdownNote: '앞의 땅을 수식'
+        },
+        {
+          id: 'l-11',
+          hebrew: 'אַרְאֶךָּ׃',
+          hebrewPlain: 'אראך',
+          pronunciation: '아르에카',
+          phoneticEn: 'ar-E-ka',
+          meaning: '내가 네게 보여 줄',
+          root: 'ר־א־ה (라아: 보다, 보이다)',
+          strongNumber: 'H7200',
+          grammar: '동사 히필(Hiphil) 미완료 1인칭 단수 + 2인칭 접미사',
+          breakdownNote: '하나님이 친히 계시하고 보게 하실 미래의 약속'
+        }
+      ]
+    }
+  },
+  {
+    id: 'vayera',
+    portionNumber: 4,
+    nameHebrew: 'וַיֵּרָא',
+    nameEnglish: 'Vayera',
+    nameKorean: '바예라 (그리고 그가 나타나셨다)',
+    book: 'Genesis',
+    bookKorean: '창세기',
+    torahReference: '창세기 18:1 - 22:24',
+    haftarahReference: '열왕기하 4:1-37',
+    britChadashah: '누가복음 17:28-37; 야고보서 2:21-23',
+    themeSummary: '마므레 상수리나무 아래의 주님의 방문, 이삭의 출생과 모리아 산 번제(아케다)',
+    keyInsights: [
+      '하나님께 능하지 못한 일이 있겠느냐는 선언 속에 불가능을 뚫고 이삭이 태어납니다.',
+      '모리아 산에서 이삭을 바치는 아케다(바침)는 독생자를 아끼지 않으신 하나님의 사랑의 모형입니다.',
+      '여호와 이레(יְהוָה יִרְאֶה) - "여호와의 산에서 준비되리라"'
+    ],
+    memoryVerse: {
+      reference: '창세기 18:14',
+      referenceEn: 'Genesis 18:14',
+      hebrewWithNiqqud: 'הֲיִפָּלֵא מֵיְהוָה דָּבָר לַמּוֹעֵד אָשׁוּב אֵלֶיךָ כָּעֵת חַיָּה וּלְשָׂרָה בֵן׃',
+      hebrewWithoutNiqqud: 'היפלא מיהוה דבר למועד אשוב אליך כעת חיה ולשרה בן׃',
+      koreanPronunciation: '하잎팔레 메아도나이 다바르 라모에드 아슈브 엘레카 카에트 하야 울레사라 벤',
+      koreanTranslation: '여호와께 능하지 못한 일이 있겠느냐 기한이 이를 때에 내가 네게로 돌아오리니 사라에게 아들이 있으리라',
+      englishTranslation: 'Is anything too hard for the LORD? At the appointed time I will return to you, about this time next year, and Sarah shall have a son.',
+      words: [
+        {
+          id: 'v-1',
+          hebrew: 'הֲיִפָּלֵא',
+          hebrewPlain: 'היפלא',
+          pronunciation: '하잎팔레',
+          phoneticEn: 'ha-yip-pa-LE',
+          meaning: '어찌 능하지 못하겠느냐 (기이하겠느냐)',
+          root: 'פ־ל־א (팔라: 기이하다, 놀랍다)',
+          strongNumber: 'H6381',
+          grammar: '의문사 הֲ + 동사 니팔(Niphal) 미완료 3인칭 남성 단수',
+          breakdownNote: '하나님에게는 불가능하거나 너무 기이한 일이 없음을 천명'
+        },
+        {
+          id: 'v-2',
+          hebrew: 'מֵיְהוָה',
+          hebrewPlain: 'מיהוה',
+          pronunciation: '메아도나이',
+          phoneticEn: 'me-Ado-nai',
+          meaning: '여호와께로부터 (여호와에게)',
+          root: 'ה־ו־ה (하야)',
+          strongNumber: 'H3068',
+          grammar: '전치사 מִן + 고유명사 יְהוָה',
+          breakdownNote: '전능하신 주님의 능력의 원천'
+        },
+        {
+          id: 'v-3',
+          hebrew: 'דָּבָר',
+          hebrewPlain: 'דבר',
+          pronunciation: '다바르',
+          phoneticEn: 'da-VAR',
+          meaning: '어떤 일(말씀)이',
+          root: 'ד־ב־ר (다바르: 말하다, 일)',
+          strongNumber: 'H1697',
+          grammar: '명사 남성 단수',
+          breakdownNote: '사건, 말씀, 모든 상황을 포괄'
+        },
+        {
+          id: 'v-4',
+          hebrew: 'לַמּוֹעֵד',
+          hebrewPlain: 'למועד',
+          pronunciation: '라모에드',
+          phoneticEn: 'la-mo-ED',
+          meaning: '정하신 기한(때)에',
+          root: 'י־ע־ד (야아드: 정하다, 모이다)',
+          strongNumber: 'H4150',
+          grammar: '전치사 לְ + 명사 מוֹעֵד (절기, 지정된 시간)',
+          breakdownNote: '하나님이 작정하신 카이로스의 정한 시간'
+        },
+        {
+          id: 'v-5',
+          hebrew: 'אָשׁוּב',
+          hebrewPlain: 'אשוב',
+          pronunciation: '아슈브',
+          phoneticEn: 'a-SHUV',
+          meaning: '내가 돌아오리니',
+          root: 'ש־ו־ב (슈브: 돌아오다, 회복하다)',
+          strongNumber: 'H7725',
+          grammar: '동사 칼 미완료 1인칭 단수',
+          breakdownNote: '주님의 신실하신 임재의 방문'
+        },
+        {
+          id: 'v-6',
+          hebrew: 'אֵלֶיךָ',
+          hebrewPlain: 'אליך',
+          pronunciation: '엘레카',
+          phoneticEn: 'e-LEI-cha',
+          meaning: '네게로',
+          root: 'אֶל + 인칭 접미사',
+          strongNumber: 'H413',
+          grammar: '전치사 + 2인칭 남성 접미사',
+          breakdownNote: '아브라함에게 주시는 확증'
+        },
+        {
+          id: 'v-7',
+          hebrew: 'כָּעֵת',
+          hebrewPlain: 'כעת',
+          pronunciation: '카에트',
+          phoneticEn: 'ka-ET',
+          meaning: '이맘때에 (지금 이 시간처럼)',
+          root: 'ע־ת (에트: 시간, 때)',
+          strongNumber: 'H6256',
+          grammar: '전치사 כְּ + 명사 עֵת',
+          breakdownNote: '내년 바로 이 동일한 계절'
+        },
+        {
+          id: 'v-8',
+          hebrew: 'חַיָּה',
+          hebrewPlain: 'חיה',
+          pronunciation: '하야',
+          phoneticEn: 'cha-YAH',
+          meaning: '생명이 돌아오는 (내년 봄/생명의 계절)',
+          root: 'ח־י־ה (하야: 살다)',
+          strongNumber: 'H2416',
+          grammar: '형용사 여성 단수',
+          breakdownNote: '새 생명이 움트는 시기'
+        },
+        {
+          id: 'v-9',
+          hebrew: 'וּלְשָׂרָה',
+          hebrewPlain: 'ולשרה',
+          pronunciation: '울레사라',
+          phoneticEn: 'ul-SA-rah',
+          meaning: '그리고 사라에게',
+          root: 'ש־ר־ה (사라: 공주, 왕비)',
+          strongNumber: 'H8283',
+          grammar: '접속사 + 전치사 + 고유명사 שָׂרָה',
+          breakdownNote: '열국의 어머니 사라'
+        },
+        {
+          id: 'v-10',
+          hebrew: 'בֵן׃',
+          hebrewPlain: 'בן',
+          pronunciation: '벤',
+          phoneticEn: 'ben',
+          meaning: '아들이 있으리라',
+          root: 'ב־נ־ה (바나: 세우다)',
+          strongNumber: 'H1121',
+          grammar: '명사 남성 단수',
+          breakdownNote: '약속의 아들 이삭(이츠하크 - 웃음)'
+        }
+      ]
+    }
+  },
+  {
+    id: 'beshalach',
+    portionNumber: 16,
+    nameHebrew: 'בְּשַׁלַּח',
+    nameEnglish: 'Beshalach',
+    nameKorean: '베샬라흐 (보냈을 때에)',
+    book: 'Exodus',
+    bookKorean: '출애굽기',
+    torahReference: '출애굽기 13:17 - 17:16',
+    haftarahReference: '사사기 4:4 - 5:31',
+    britChadashah: '요한복음 6:15-71; 고린도전서 10:1-5',
+    themeSummary: '홍해의 갈라짐과 구원의 바다, 만나와 메추라기, 반석의 생수와 모세의 노래',
+    keyInsights: [
+      '홍해 앞에서 이스라엘은 두려워했으나, 하나님은 "가만히 서서 여호와의 구원을 보라" 명하셨습니다.',
+      '홍해를 건넌 후 부른 "바다의 노래(시라트 하얌)"는 구속사의 찬양의 절정입니다.',
+      '여호와 라파(치료하시는 하나님)와 여호와 닛시(여호와는 나의 깃발)가 계시됩니다.'
+    ],
+    memoryVerse: {
+      reference: '출애굽기 15:2',
+      referenceEn: 'Exodus 15:2',
+      hebrewWithNiqqud: 'עָזִּי וְזִמְרָת יָהּ וַיְהִי־לִי לִישׁוּעָה זֶה אֵלִי וְאַנְוֵהוּ אֱלֹהֵי אָבִי וַאֲרֹמְמֶנְהוּ׃',
+      hebrewWithoutNiqqud: 'עזי וזמרת יה ויהי לי לישועה זה אלי ואנוהו אלהי אבי וארממנהו׃',
+      koreanPronunciation: '오지 베지므라트 야흐 바예히 리 리슈아 제 엘리 베안베후 엘로헤 아비 바아로메멘후',
+      koreanTranslation: '여호와는 나의 힘이요 노래시며 나의 구원이시로다 그는 나의 하나님이시니 내가 그를 찬송할 것이요 내 아버지의 하나님이시니 내가 그를 높이리로다',
+      englishTranslation: 'The LORD is my strength and my song, and he has become my salvation; this is my God, and I will praise him, my father\'s God, and I will exalt him.',
+      words: [
+        {
+          id: 'ex-1',
+          hebrew: 'עָזִּי',
+          hebrewPlain: 'עזי',
+          pronunciation: '오지',
+          phoneticEn: 'oz-ZI',
+          meaning: '나의 힘(능력)',
+          root: 'ע־ז־ז (아자즈: 강하다)',
+          strongNumber: 'H5797',
+          grammar: '명사 남성 단수 + 1인칭 소유 접미사',
+          breakdownNote: '원수를 물리치시는 하나님의 견고한 능력'
+        },
+        {
+          id: 'ex-2',
+          hebrew: 'וְזִמְרָת',
+          hebrewPlain: 'וזמרת',
+          pronunciation: '베지므라트',
+          phoneticEn: 've-zim-RAT',
+          meaning: '그리고 노래시며',
+          root: 'ז־מ־ר (자마르: 노래하다, 악기로 찬양하다)',
+          strongNumber: 'H2176',
+          grammar: '접속사 + 명사 여성 단수 연계형',
+          breakdownNote: '마음 깊은 곳에서 터져 나오는 승리의 찬미'
+        },
+        {
+          id: 'ex-3',
+          hebrew: 'יָהּ',
+          hebrewPlain: 'יה',
+          pronunciation: '야흐',
+          phoneticEn: 'Yah',
+          meaning: '여호와는 (단축형 성호)',
+          root: 'ה־ו־ה (하야)',
+          strongNumber: 'H3050',
+          grammar: '고유명사 축약형',
+          breakdownNote: '할렐루야(야를 찬양하라)의 거룩한 이름'
+        },
+        {
+          id: 'ex-4',
+          hebrew: 'וַיְהִי־לִי',
+          hebrewPlain: 'ויהי לי',
+          pronunciation: '바예히 리',
+          phoneticEn: 'vay-HI li',
+          meaning: '그리고 나에게 되셨도다',
+          root: 'ה־י־ה (하야: 되다)',
+          strongNumber: 'H1961',
+          grammar: '와우 연속 미완료 3인칭 단수 + 전치사 לְ + 1인칭',
+          breakdownNote: '실제 삶 속에서 구원이 되어주신 인격적 체험'
+        },
+        {
+          id: 'ex-5',
+          hebrew: 'לִישׁוּעָה',
+          hebrewPlain: 'לישועה',
+          pronunciation: '리슈아',
+          phoneticEn: 'li-shu-AH',
+          meaning: '구원이',
+          root: 'י־ש־ע (야샤: 구원하다, 넓히다)',
+          strongNumber: 'H3444',
+          grammar: '전치사 לְ + 명사 여성 단수 יְשׁוּעָה',
+          breakdownNote: '예슈아(예수 그리스도)의 어원'
+        },
+        {
+          id: 'ex-6',
+          hebrew: 'זֶה',
+          hebrewPlain: 'זה',
+          pronunciation: '제',
+          phoneticEn: 'zeh',
+          meaning: '이분이 바로',
+          root: '지시대명사',
+          strongNumber: 'H2088',
+          grammar: '지시대명사 남성 단수',
+          breakdownNote: '눈앞에 생생하게 역사하시는 주님을 가리킴'
+        },
+        {
+          id: 'ex-7',
+          hebrew: 'אֵלִי',
+          hebrewPlain: 'אלי',
+          pronunciation: '엘리',
+          phoneticEn: 'e-LI',
+          meaning: '나의 하나님이시니',
+          root: 'א־ל (엘: 하나님, 강한 자)',
+          strongNumber: 'H410',
+          grammar: '명사 + 1인칭 접미사',
+          breakdownNote: '나와 개인적 언약을 맺으신 하나님'
+        },
+        {
+          id: 'ex-8',
+          hebrew: 'וְאַנְוֵהוּ',
+          hebrewPlain: 'ואנוהו',
+          pronunciation: '베안베후',
+          phoneticEn: 've-an-VEI-hu',
+          meaning: '내가 그분을 찬양하리로다 (처소를 삼으리로다)',
+          root: 'נ־ו־ה (나바: 아름답게 하다, 거처를 예비하다)',
+          strongNumber: 'H5115',
+          grammar: '동사 히필 미완료 1인칭 단수 + 3인칭 목적 접미사',
+          breakdownNote: '하나님을 내 마음에 영광스럽게 모시고 찬양함'
+        },
+        {
+          id: 'ex-9',
+          hebrew: 'אֱלֹהֵי',
+          hebrewPlain: 'אלהי',
+          pronunciation: '엘로헤',
+          phoneticEn: 'e-lo-HEI',
+          meaning: '~의 하나님이시니',
+          root: 'א־ל־ה',
+          strongNumber: 'H430',
+          grammar: '명사 연계형',
+          breakdownNote: '대대로 전승된 신앙의 고백'
+        },
+        {
+          id: 'ex-10',
+          hebrew: 'אָבִי',
+          hebrewPlain: 'אבי',
+          pronunciation: '아비',
+          phoneticEn: 'a-VI',
+          meaning: '내 아버지의',
+          root: 'א־ב (아브)',
+          strongNumber: 'H1',
+          grammar: '명사 + 1인칭 접미사',
+          breakdownNote: '조상들의 언약을 성취하시는 분'
+        },
+        {
+          id: 'ex-11',
+          hebrew: 'וַאֲרֹמְמֶנְהוּ׃',
+          hebrewPlain: 'וארממנהו',
+          pronunciation: '바아로메멘후',
+          phoneticEn: 'va-a-rom-MEN-hu',
+          meaning: '내가 그분을 가장 높이리로다',
+          root: 'ר־ו־ם (룸: 높이다, 승리하다)',
+          strongNumber: 'H7311',
+          grammar: '동사 폴렐(Polel) 미완료 1인칭 단수 + 목적 접미사',
+          breakdownNote: '온 우주 위에 영광을 드높여 찬미함'
+        }
+      ]
+    }
+  },
+  {
+    id: 'vaetchanan',
+    portionNumber: 45,
+    nameHebrew: 'וָאֶתְחַנַּן',
+    nameEnglish: 'Vaetchanan',
+    nameKorean: '바에트하난 (그리고 내가 간구하였더니)',
+    book: 'Deuteronomy',
+    bookKorean: '신명기',
+    torahReference: '신명기 3:23 - 7:11',
+    haftarahReference: '이사야 40:1-26',
+    britChadashah: '마태복음 4:1-11; 마가복음 12:28-34',
+    themeSummary: '가장 큰 계명인 쉐마 이스라엘(Shema), 십계명의 재선포와 마음을 다한 하나님 사랑',
+    keyInsights: [
+      '쉐마(שְׁמַע)는 단순한 "듣기"를 넘어 듣고 순종함(obey)을 의미하는 유대 신앙의 심장입니다.',
+      '여호와는 유일한(אֶחָד, 에하드) 분이시며, 복합적 통일성 안에서 온전한 하나이십니다.',
+      '마음과 뜻과 힘을 다하여 하나님을 사랑하라는 계명은 예수님이 첫째 되는 계명으로 인용하셨습니다.'
+    ],
+    memoryVerse: {
+      reference: '신명기 6:4-5',
+      referenceEn: 'Deuteronomy 6:4-5',
+      hebrewWithNiqqud: 'שְׁמַע יִשְׂרָאֵל יְהוָה אֱלֹהֵינוּ יְהוָה אֶחָד׃ וְאָהַבְתָּ אֵת יְהוָה אֱלֹהֶיךָ בְּכָל־לְבָבְךָ וּבְכָל־נַפְשְׁךָ וּבְכָל־מְאֹדֶךָ׃',
+      hebrewWithoutNiqqud: 'שמע ישראל יהוה אלהינו יהוה אחד׃ ואהבת את יהוה אלהיך בכל לבבך ובכל נפשך ובכל מאדך׃',
+      koreanPronunciation: '쉐마 이스라엘 아도나이 엘로헤이누 아도나이 에하드 베아하브타 에트 아도나이 엘로헤하 베콜 레바브하 우베콜 나프쉐하 우베콜 메오데하',
+      koreanTranslation: '이스라엘아 들으라 우리 하나님 여호와는 오직 유일한 여호와이시니 너는 마음을 다하고 뜻을 다하고 힘을 다하여 네 하나님 여호와를 사랑하라',
+      englishTranslation: 'Hear, O Israel: The LORD our God, the LORD is one. You shall love the LORD your God with all your heart and with all your soul and with all your might.',
+      words: [
+        {
+          id: 'sh-1',
+          hebrew: 'שְׁמַע',
+          hebrewPlain: 'שמע',
+          pronunciation: '쉐마',
+          phoneticEn: 'she-MA',
+          meaning: '들으라! (경청하고 순종하라)',
+          root: 'ש־מ־ע (샤마: 듣다, 순종하다)',
+          strongNumber: 'H8085',
+          grammar: '동사 칼 명령형 남성 단수',
+          breakdownNote: '단순한 청취가 아닌 심장에 새기고 행하는 들음'
+        },
+        {
+          id: 'sh-2',
+          hebrew: 'יִשְׂרָאֵל',
+          hebrewPlain: 'ישראל',
+          pronunciation: '이스라엘',
+          phoneticEn: 'yis-ra-EL',
+          meaning: '이스라엘아 (하나님과 겨루어 이긴 자)',
+          root: 'ש־ר־ה + א־ל (사라 + 엘)',
+          strongNumber: 'H3478',
+          grammar: '고유명사 호격',
+          breakdownNote: '언약의 백성 전체를 부르시는 음성'
+        },
+        {
+          id: 'sh-3',
+          hebrew: 'יְהוָה',
+          hebrewPlain: 'יהוה',
+          pronunciation: '아도나이',
+          phoneticEn: 'Adonai',
+          meaning: '여호와는',
+          root: 'ה־ו־ה',
+          strongNumber: 'H3068',
+          grammar: '신성사문자',
+          breakdownNote: '언약의 신실하신 주 하나님'
+        },
+        {
+          id: 'sh-4',
+          hebrew: 'אֱלֹהֵינוּ',
+          hebrewPlain: 'אלהינו',
+          pronunciation: '엘로헤이누',
+          phoneticEn: 'e-lo-HEI-nu',
+          meaning: '우리 하나님이시니',
+          root: 'א־ל־ה',
+          strongNumber: 'H430',
+          grammar: '명사 남성 복수 + 1인칭 복수 접미사',
+          breakdownNote: '우리의 언약의 주인이신 주권자'
+        },
+        {
+          id: 'sh-5',
+          hebrew: 'יְהוָה',
+          hebrewPlain: 'יהוה',
+          pronunciation: '아도나이',
+          phoneticEn: 'Adonai',
+          meaning: '여호와는',
+          root: 'ה־ו־ה',
+          strongNumber: 'H3068',
+          grammar: '신성사문자',
+          breakdownNote: '다시 한 번 주님의 존귀한 성호를 강조'
+        },
+        {
+          id: 'sh-6',
+          hebrew: 'אֶחָד׃',
+          hebrewPlain: 'אחד',
+          pronunciation: '에하드',
+          phoneticEn: 'e-CHAD',
+          meaning: '오직 하나(유일)이시니라',
+          root: 'א־ח־ד (아하드: 하나 되다)',
+          strongNumber: 'H259',
+          grammar: '수사 / 형용사 남성 단수',
+          breakdownNote: '비교할 수 없는 유일성과 복합적 일치성'
+        },
+        {
+          id: 'sh-7',
+          hebrew: 'וְאָהַבְתָּ',
+          hebrewPlain: 'ואהבת',
+          pronunciation: '베아하브타',
+          phoneticEn: 've-a-hav-TA',
+          meaning: '너는 사랑하라',
+          root: 'א־ה־ב (아하브: 사랑하다)',
+          strongNumber: 'H157',
+          grammar: '와우 접속 + 칼 완료 2인칭 남성 단수 (명령적 의미)',
+          breakdownNote: '감정을 넘어선 온 존재의 결단과 헌신'
+        },
+        {
+          id: 'sh-8',
+          hebrew: 'אֵת',
+          hebrewPlain: 'את',
+          pronunciation: '에트',
+          phoneticEn: 'et',
+          meaning: '~을',
+          root: '불변화사',
+          strongNumber: 'H853',
+          grammar: '목적격 표지',
+          breakdownNote: '사랑의 대상을 지칭'
+        },
+        {
+          id: 'sh-9',
+          hebrew: 'יְהוָה',
+          hebrewPlain: 'יהוה',
+          pronunciation: '아도나이',
+          phoneticEn: 'Adonai',
+          meaning: '여호와를',
+          root: 'ה־ו־ה',
+          strongNumber: 'H3068',
+          grammar: '신성사문자',
+          breakdownNote: '사랑의 궁극적 대상'
+        },
+        {
+          id: 'sh-10',
+          hebrew: 'אֱלֹהֶיךָ',
+          hebrewPlain: 'אלהיך',
+          pronunciation: '엘로헤하',
+          phoneticEn: 'e-lo-HE-cha',
+          meaning: '네 하나님을',
+          root: 'א־ל־ה',
+          strongNumber: 'H430',
+          grammar: '명사 복수 + 2인칭 단수 소유 접미사',
+          breakdownNote: '너만의 인격적인 구주'
+        },
+        {
+          id: 'sh-11',
+          hebrew: 'בְּכָל־לְבָבְךָ',
+          hebrewPlain: 'בכל לבבך',
+          pronunciation: '베콜 레바브하',
+          phoneticEn: 'be-chol le-vav-CHA',
+          meaning: '네 온 마음을 다하여',
+          root: 'ל־ב־ב (레바브: 마음, 생각, 의지)',
+          strongNumber: 'H3824',
+          grammar: '전치사 בְּ + כֹּל (모든) + 명사 + 소유 접미사',
+          breakdownNote: '생각과 감정과 결단의 좌소 전체'
+        },
+        {
+          id: 'sh-12',
+          hebrew: 'וּבְכָל־נַפְשְׁךָ',
+          hebrewPlain: 'ובכל נפשך',
+          pronunciation: '우베콜 나프쉐하',
+          phoneticEn: 'u-ve-chol naf-she-CHA',
+          meaning: '네 온 영혼(생명)을 다하여',
+          root: 'נ־פ־שׁ (네페쉬: 영혼, 목숨, 호흡)',
+          strongNumber: 'H5315',
+          grammar: '접속사 + 전치사 + 명사 + 소유 접미사',
+          breakdownNote: '숨결 하나하나와 존재의 중심'
+        },
+        {
+          id: 'sh-13',
+          hebrew: 'וּבְכָל־מְאֹדֶךָ׃',
+          hebrewPlain: 'ובכל מאדך',
+          pronunciation: '우베콜 메오데하',
+          phoneticEn: 'u-ve-chol me-o-de-CHA',
+          meaning: '네 온 힘(재물과 능력)을 다하여',
+          root: 'מ־א־ד (메오드: 심히, 넘치도록, 힘)',
+          strongNumber: 'H3966',
+          grammar: '접속사 + 전치사 + 명사/부사 + 소유 접미사',
+          breakdownNote: '물질, 에너지, 모든 수단과 지경을 총동원함'
+        }
+      ]
+    }
+  },
+  {
+    id: 'naso',
+    portionNumber: 35,
+    nameHebrew: 'נָשֹׂא',
+    nameEnglish: 'Naso',
+    nameKorean: '나소 (계수하라, 들어올리라)',
+    book: 'Numbers',
+    bookKorean: '민수기',
+    torahReference: '민수기 4:21 - 7:89',
+    haftarahReference: '사사기 13:2-25',
+    britChadashah: '누가복음 1:11-20; 요한복음 17:1-26',
+    themeSummary: '레위인의 직무와 나실인의 서원, 성막 봉헌과 대제사장의 아론의 삼중 축복(Birkat Kohanim)',
+    keyInsights: [
+      '아론의 축복은 히브리어 성경에서 가장 거룩하고 아름다운 시적 축복문입니다.',
+      '3줄로 이루어져 있으며 1구절 3단어(15자), 2구절 5단어(20자), 3구절 7단어(25자)로 점진적 확장을 이룹니다.',
+      '샬롬(שָׁלוֹם)은 단순한 평화가 아닌 깨어진 것이 온전하게 회복되는 완전한 충만입니다.'
+    ],
+    memoryVerse: {
+      reference: '민수기 6:24-26',
+      referenceEn: 'Numbers 6:24-26',
+      hebrewWithNiqqud: 'יְבָרֶכְךָ יְהוָה וְיִשְׁמְרֶךָ׃ יָאֵר יְהוָה פָּנָיו אֵלֶיךָ וִיחֻנֶּךָּ׃ יִשָּׂא יְהוָה פָּנָיו אֵלֶיךָ וְיָשֵׂם לְךָ שָׁלוֹם׃',
+      hebrewWithoutNiqqud: 'יברכך יהוה וישמרך׃ יאר יהוה פניו אליך ויחנך׃ ישא יהוה פניו אליך וישם לך שלום׃',
+      koreanPronunciation: '예바레케카 아도나이 베이쉬메레카 야에르 아도나이 파나브 엘레카 비훈네카 이사 아도나이 파나브 엘레카 베야셈 레카 샬롬',
+      koreanTranslation: '여호와는 네게 복을 주시고 너를 지키시기를 원하며 여호와는 그의 얼굴을 네게 비추사 은혜 베푸시기를 원하며 여호와는 그 얼굴을 네게로 향하여 드사 평강 주시기를 원하노라',
+      englishTranslation: 'The LORD bless you and keep you; the LORD make his face shine upon you and be gracious to you; the LORD lift up his countenance upon you and give you peace.',
+      words: [
+        {
+          id: 'bk-1',
+          hebrew: 'יְבָרֶכְךָ',
+          hebrewPlain: 'יברכך',
+          pronunciation: '예바레케카',
+          phoneticEn: 'ye-va-re-che-CHA',
+          meaning: '네게 복을 주시기를 원하며 (무릎을 꿇으사 복을 내리심)',
+          root: 'ב־ר־ך (바라크: 무릎꿇다, 축복하다)',
+          strongNumber: 'H1288',
+          grammar: '동사 피엘(Piel) 단축 미완료 3인칭 남성 단수 + 2인칭 접미사',
+          breakdownNote: '하나님이 몸을 낮추어 인간에게 부어주시는 풍성한 복'
+        },
+        {
+          id: 'bk-2',
+          hebrew: 'יְהוָה',
+          hebrewPlain: 'יהוה',
+          pronunciation: '아도나이',
+          phoneticEn: 'Adonai',
+          meaning: '여호와께서',
+          root: 'ה־ו־ה',
+          strongNumber: 'H3068',
+          grammar: '신성사문자',
+          breakdownNote: '모든 복의 주체이신 언약의 주'
+        },
+        {
+          id: 'bk-3',
+          hebrew: 'וְיִשְׁמְרֶךָ׃',
+          hebrewPlain: 'וישמרך',
+          pronunciation: '베이쉬메레카',
+          phoneticEn: 've-yish-me-re-CHA',
+          meaning: '그리고 너를 지키시기를 (보호하시기를)',
+          root: 'ש־מ־ר (샤마르: 지키다, 파수하다)',
+          strongNumber: 'H8104',
+          grammar: '접속사 + 칼 미완료 + 2인칭 접미사',
+          breakdownNote: '가시울타리를 쳐서 악으로부터 안전하게 보호하심'
+        },
+        {
+          id: 'bk-4',
+          hebrew: 'יָאֵר',
+          hebrewPlain: 'יאר',
+          pronunciation: '야에르',
+          phoneticEn: 'ya-ER',
+          meaning: '비추시기를 (환하게 빛나게 하심)',
+          root: 'א־ו־ר (오르: 빛, 비추다)',
+          strongNumber: 'H215',
+          grammar: '동사 히필 미완료 단축형',
+          breakdownNote: '어둠을 걷어내고 생명의 빛을 환히 비추심'
+        },
+        {
+          id: 'bk-5',
+          hebrew: 'יְהוָה',
+          hebrewPlain: 'יהוה',
+          pronunciation: '아도나이',
+          phoneticEn: 'Adonai',
+          meaning: '여호와께서',
+          root: 'ה־ו־ה',
+          strongNumber: 'H3068',
+          grammar: '신성사문자',
+          breakdownNote: '두 번째 축복의 주님'
+        },
+        {
+          id: 'bk-6',
+          hebrew: 'פָּנָיו',
+          hebrewPlain: 'פניו',
+          pronunciation: '파나브',
+          phoneticEn: 'pa-NAV',
+          meaning: '그분의 얼굴을',
+          root: 'פ־נ־ה (파나: 돌아서다, 향하다)',
+          strongNumber: 'H6440',
+          grammar: '명사 복수 פָּנִים + 3인칭 소유 접미사',
+          breakdownNote: '하나님의 인자하고 따스한 친밀한 얼굴'
+        },
+        {
+          id: 'bk-7',
+          hebrew: 'אֵלֶיךָ',
+          hebrewPlain: 'אליך',
+          pronunciation: '엘레카',
+          phoneticEn: 'e-LEI-cha',
+          meaning: '너를 향하여',
+          root: '전치사 + 접미사',
+          strongNumber: 'H413',
+          grammar: '전치사 + 2인칭 접미사',
+          breakdownNote: '개별적인 한 영혼을 주목하심'
+        },
+        {
+          id: 'bk-8',
+          hebrew: 'וִיחֻנֶּךָּ׃',
+          hebrewPlain: 'ויחנך',
+          pronunciation: '비훈네카',
+          phoneticEn: 'vi-chun-NE-ka',
+          meaning: '은혜를 베푸시기를 원하며',
+          root: 'ח־נ־ן (하난: 은혜를 베풀다, 긍휼히 여기다)',
+          strongNumber: 'H2603',
+          grammar: '접속사 + 칼 미완료 + 목적 접미사',
+          breakdownNote: '대가 없는 무한한 사랑과 자비(헨)의 공급'
+        },
+        {
+          id: 'bk-9',
+          hebrew: 'יִשָּׂא',
+          hebrewPlain: 'ישא',
+          pronunciation: '이사',
+          phoneticEn: 'yis-SA',
+          meaning: '향하여 드시기를 (들어올리시기를)',
+          root: 'נ־שׂ־א (나사: 들다, 짊어지다)',
+          strongNumber: 'H5375',
+          grammar: '동사 칼 미완료 3인칭 단수',
+          breakdownNote: '부모가 아기를 번쩍 들어 눈을 맞추듯 시선을 두심'
+        },
+        {
+          id: 'bk-10',
+          hebrew: 'יְהוָה',
+          hebrewPlain: 'יהוה',
+          pronunciation: '아도나이',
+          phoneticEn: 'Adonai',
+          meaning: '여호와께서',
+          root: 'ה־ו־ה',
+          strongNumber: 'H3068',
+          grammar: '신성사문자',
+          breakdownNote: '세 번째 완전한 평강의 주님'
+        },
+        {
+          id: 'bk-11',
+          hebrew: 'פָּנָיו',
+          hebrewPlain: 'פניו',
+          pronunciation: '파나브',
+          phoneticEn: 'pa-NAV',
+          meaning: '그분의 얼굴을',
+          root: 'פ־נ־ה',
+          strongNumber: 'H6440',
+          grammar: '명사 복수 + 소유 접미사',
+          breakdownNote: '영광의 존전'
+        },
+        {
+          id: 'bk-12',
+          hebrew: 'אֵלֶיךָ',
+          hebrewPlain: 'אליך',
+          pronunciation: '엘레카',
+          phoneticEn: 'e-LEI-cha',
+          meaning: '너를 향하여',
+          root: '전치사',
+          strongNumber: 'H413',
+          grammar: '전치사 + 접미사',
+          breakdownNote: '나를 향한 변함없는 시선'
+        },
+        {
+          id: 'bk-13',
+          hebrew: 'וְיָשֵׂם',
+          hebrewPlain: 'וישם',
+          pronunciation: '베야셈',
+          phoneticEn: 've-ya-SEM',
+          meaning: '그리고 두시기를 (설정하시기를)',
+          root: 'שׂ־ו־ם (심: 두다, 세우다)',
+          strongNumber: 'H7760',
+          grammar: '접속사 + 칼 미완료 단축형',
+          breakdownNote: '영원히 변치 않도록 단단히 심어주심'
+        },
+        {
+          id: 'bk-14',
+          hebrew: 'לְךָ',
+          hebrewPlain: 'לך',
+          pronunciation: '레카',
+          phoneticEn: 'le-CHA',
+          meaning: '너에게',
+          root: '전치사 לְ',
+          strongNumber: 'H0',
+          grammar: '전치사 + 2인칭 접미사',
+          breakdownNote: '바로 당신에게'
+        },
+        {
+          id: 'bk-15',
+          hebrew: 'שָׁלוֹם׃',
+          hebrewPlain: 'שלום',
+          pronunciation: '샬롬',
+          phoneticEn: 'sha-LOM',
+          meaning: '평강(완전한 안식과 온전함)을',
+          root: 'ש־ל־ם (샬람: 온전하다, 완성하다)',
+          strongNumber: 'H7965',
+          grammar: '명사 남성 단수',
+          breakdownNote: '영혼과 육체, 관계와 삶의 흠 없는 하나님의 평화'
+        }
+      ]
+    }
+  },
+  {
+    id: 'kedoshim',
+    portionNumber: 30,
+    nameHebrew: 'קְדֹשִׁים',
+    nameEnglish: 'Kedoshim',
+    nameKorean: '케도쉼 (너희는 거룩하라)',
+    book: 'Leviticus',
+    bookKorean: '레위기',
+    torahReference: '레위기 19:1 - 20:27',
+    haftarahReference: '아모스 9:7-15 / 에스겔 20:2-20',
+    britChadashah: '마태복음 5:43-48; 베드로전서 1:13-16',
+    themeSummary: '하나님의 거룩성에 동참하는 백성의 삶의 윤리와 이웃 사랑의 대강령',
+    keyInsights: [
+      '"내가 거룩하니 너희도 거룩할지어다" - 거룩(카도시)은 세상과 구별되어 하나님께 바쳐짐입니다.',
+      '이웃 사랑하기를 네 자신과 같이 사랑하라는 말씀은 율법 전체의 완성입니다.',
+      '연약한 자, 가난한 자, 이방인, 장애인을 배려하는 것이 곧 거룩의 실천입니다.'
+    ],
+    memoryVerse: {
+      reference: '레위기 19:18',
+      referenceEn: 'Leviticus 19:18',
+      hebrewWithNiqqud: 'וְאָהַבְתָּ לְרֵעֲךָ כָּמוֹךָ אֲנִי יְהוָה׃',
+      hebrewWithoutNiqqud: 'ואהבת לרעך כמוך אני יהוה׃',
+      koreanPronunciation: '베아하브타 레레아하 카모하 아니 아도나이',
+      koreanTranslation: '네 이웃 사랑하기를 네 자신과 같이 사랑하라 나는 여호와이니라',
+      englishTranslation: 'You shall love your neighbor as yourself: I am the LORD.',
+      words: [
+        {
+          id: 'kd-1',
+          hebrew: 'וְאָהַבְתָּ',
+          hebrewPlain: 'ואהבת',
+          pronunciation: '베아하브타',
+          phoneticEn: 've-a-hav-TA',
+          meaning: '그리고 너는 사랑하라',
+          root: 'א־ה־ב (아하브: 사랑하다)',
+          strongNumber: 'H157',
+          grammar: '와우 접속 + 칼 완료 2인칭 남성 단수',
+          breakdownNote: '하나님 사랑이 이웃 사랑으로 확장되는 계명'
+        },
+        {
+          id: 'kd-2',
+          hebrew: 'לְרֵעֲךָ',
+          hebrewPlain: 'לרעך',
+          pronunciation: '레레아하',
+          phoneticEn: 'le-re-a-CHA',
+          meaning: '네 이웃(동료)을',
+          root: 'ר־ע־ה (라아: 교제하다, 친구)',
+          strongNumber: 'H7453',
+          grammar: '전치사 לְ + 명사 רֵעַ + 2인칭 소유 접미사',
+          breakdownNote: '나와 일상에서 마주하는 모든 이웃과 동행자'
+        },
+        {
+          id: 'kd-3',
+          hebrew: 'כָּמוֹךָ',
+          hebrewPlain: 'כמוך',
+          pronunciation: '카모하',
+          phoneticEn: 'ka-MO-cha',
+          meaning: '너 자신처럼 (너와 마찬가지로)',
+          root: 'כְּמוֹ (전치사 ~처럼)',
+          strongNumber: 'H3644',
+          grammar: '전치사 + 2인칭 남성 단수 접미사',
+          breakdownNote: '자신을 돌보듯 타인의 존엄을 소중히 여김'
+        },
+        {
+          id: 'kd-4',
+          hebrew: 'אֲנִי',
+          hebrewPlain: 'אני',
+          pronunciation: '아니',
+          phoneticEn: 'a-NI',
+          meaning: '나는 ~이니라',
+          root: '인칭대명사',
+          strongNumber: 'H589',
+          grammar: '1인칭 단수 독립 인칭대명사',
+          breakdownNote: '계명의 보증인이신 하나님의 서명'
+        },
+        {
+          id: 'kd-5',
+          hebrew: 'יְהוָה׃',
+          hebrewPlain: 'יהוה',
+          pronunciation: '아도나이',
+          phoneticEn: 'Adonai',
+          meaning: '여호와',
+          root: 'ה־ו־ה',
+          strongNumber: 'H3068',
+          grammar: '신성사문자',
+          breakdownNote: '거룩한 하나님의 절대적 권위'
+        }
+      ]
+    }
+  }
+];
+
+export const DAYS_INFO = [
+  {
+    day: 1,
+    title: '1일차: 낭독과 발음',
+    subtitle: '니쿠드(모음) 음절 읽기 & 원어 낭독 청취',
+    icon: 'Volume2',
+    desc: '히브리어 모음 부호(니쿠드)를 익히고, 낭독 음성과 한글 발음을 함께 보며 또박또박 소리 내어 5회 낭독합니다.'
+  },
+  {
+    day: 2,
+    title: '2일차: 단어와 어근',
+    subtitle: '단어별 쇼레쉬(어근) & 품사 분석 플래시카드',
+    icon: 'Layers',
+    desc: '각 단어의 3자음 어근(Shoresh)과 스트롱 번호, 문법 형태를 파악하며 원문의 어휘를 마음에 깊이 새깁니다.'
+  },
+  {
+    day: 3,
+    title: '3일차: 빈칸 채우기',
+    subtitle: '점진적 클로즈 테스트 (4단계)',
+    icon: 'FileText',
+    desc: '난이도 25% → 50% → 75% → 100%로 점차 가려지는 빈칸을 히브리어 원어로 채워 넣으며 기억을 인출합니다.'
+  },
+  {
+    day: 4,
+    title: '4일차: 어순 맞추기',
+    subtitle: '히브리어 RTL(우→좌) 퍼즐 재조립',
+    icon: 'Shuffle',
+    desc: '흩어진 히브리어 단어 조각들을 오른쪽에서 왼쪽으로 성경 원문 문맥에 맞게 바른 순서로 배열합니다.'
+  },
+  {
+    day: 5,
+    title: '5일차: 가림판 암송',
+    subtitle: '한국어 번역을 보고 히브리어 역연상',
+    icon: 'EyeOff',
+    desc: '한국어 문장을 보며 히브리어 단어를 차례대로 머릿속에서 인출하고, 가림판을 클릭하여 일치 여부를 확인합니다.'
+  },
+  {
+    day: 6,
+    title: '6일차: 받아쓰기 연습',
+    subtitle: '자판 타이핑 또는 블록 조합 완성',
+    icon: 'Keyboard',
+    desc: '발음과 의미 힌트를 보며 히브리어 철자를 직접 타이핑하거나 자음 블록을 맞춰 완전한 문장을 구축합니다.'
+  },
+  {
+    day: 7,
+    title: '7일차: 최종 완송 & 묵상',
+    subtitle: '음성 녹음, 암송 테스트 & 샤밧 묵상',
+    icon: 'Award',
+    desc: '일주일 동안 새긴 거룩한 말씀을 보지 않고 목소리로 녹음하여 듣고, 샤밧 묵상 기록을 남겨 마스터 뱃지를 획득합니다.'
+  }
+];
